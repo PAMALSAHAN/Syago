@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!--css that created by me-->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>travel agency</title>
+
+</head>
+<body id="home" class="scrollspy" >
+
+    <!--nav bar-->
+    <div class="navbar-fixed"> <!--to fix the nav bar we use does not change with the scrolling-->
+        <nav class="amber"> <!--background colour that i use-->
+            <div class="container">
+                <!--it is just like the nav wrapper both needed-->
+
+                <div class="nav-wrapper">
+                
+                    <!--is nav-wrapper not their the space between last
+                    word and the margin not exit.so use it for beauty
+                    -->
+                    
+                    <a href="#" class=" brand-logo center pink-text text-darken-1">Travel Agency</a>
+                    <!--in this case brand logo is used to get suitable font size
+                        center to change the align to center right center left
+                        pink-text to change the text colour to pink
+                        text-darken-2 change the pink colour to dark pink, 3 get more darken
+                        nav bar is responsive it mean change the nav bar according to the size
+                    -->
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+
+                        <!--side nav mean that nav bar is onthe right -->
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a href="#home">home</a>
+                                
+                        </li>
+                        <li>
+                                <a href="#packages">packages</a>
+                        </li>
+
+                        <li>
+                                <a href="#tour">tour</a>
+                        </li>
+
+                        <li>
+                                <a href="#contact">contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            
+
+            </div>
+
+        </nav>
+    </div>
+
+    <ul class="sidenav amber lighten-2 " id="mobile-nav">  <!--this is be
+    because befor we making the material icon we make a 
+    a tag and we put class as sidenav-triggerd and data
+    target as mobile-nav because for mobile use we have to 
+    use 
+    -->
+    <!--we have to initialize with the javascript -->
+        <li>
+            <a href="#home">home</a>
+                
+        </li>
+        <li>
+                <a href="#packages">packages</a>
+        </li>
+
+        <li>
+                <a href="#tour">tour</a>
+        </li>
+
+        <li>
+                <a href="#contact">contact</a>
+        </li>
+    </ul>
+
+    <!--section : slider-->
+    <section class="slider">
+
+            <ul class="slides">
+                    <li>
+                      <img src="img/1.jpg"> <!-- random image -->
+                      <div class="caption center-align"> <!--how the caption on the image-->
+                        <h3>"Adventure may hurt you"</h3>
+                        <h4 class="light black-text text-darken-3">but monotony will kill you.</h5>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="img/2.jpg" class="show-on-large-and-below"> <!-- random image -->
+                      <div class="caption right-align">
+                        <h2 class="indigo-text">"Don’t listen to what they say,"</h3>
+                        <h4 class=" black-text text-lighten-3">Just go and see</h5>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="img/3.jpg"> <!-- random image -->
+                      <div class="caption left-align">
+                        <h1 class="orange-text text-darken-3">The Impulse to Travel Is</h3>
+                        <h4 class=" white-text text-lighten-3">one of the hopeful symptoms of life</h5>
+                       </div>
+                    </li>
+           
+                  </ul>
+
+    </section>
+
+    <!--section search-->
+    <section id="search" class="section section-search amber darken-2 black-text center scrollspy">
+        <!--scrollspy mean one of the navigation 
+        center for align
+        section is used to for margin purpose
+
+        section center in olny need things
+        -->
+
+        <div class="container ">
+            <div class="row">
+                <div class="col-s12">
+                    <h3>search destination</h3>
+                   <div class="input-field"> <!--this is essintial other wise it will not work
+                        for the sugession
+                -->
+                        <input type="text" class="amber lighten-2 black-text autocomplete center" id="autocomplete-input" placeholder="Enter place to search">
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--section :icon boxes-->
+    <section class="section section-icons grey lighten-4 center  "> 
+          <div class="container ">
+              <div class="row  ">
+                  <div class="col s12 m4  ">
+                    <div class="card-panel black-text ">
+                        <i class="material-icons large amber-text ">restaurant</i>
+                        <h4>Hospitality</h4>
+                        <p class="grey-text text-darken-3">
+                            we manage all accomodation and other
+                        </p>
+
+                    </div>
+                  </div>
+
+                  <div class="col s12 m4 ">
+                        <div class="card-panel black-text">
+                            <i class="material-icons large amber-text ">directions_bus</i>
+                            <h4>Pick Me</h4>
+                            <p class="grey-text text-darken-3">
+                                we taking you with a safe journery trust us
+                            </p>
+    
+                        </div>
+                      </div>
+
+                      <div class="col s12 m4 ">
+                            <div class="card-panel black-text">
+                                <i class="material-icons large amber-text ">local_airport</i>
+                                <h4>Free ticketing</h4>
+                                <p class="grey-text text-darken-3">
+                                    Dont think about ticketing we manage it
+                                </p>
+        
+                            </div>
+                          </div>
+
+
+              </div>
+          </div>
+    </section>
+    <!--section -popular palaces headline -->
+   <section class="amber darken-2 ">
+       <div class="container  valign-wrapper">
+            <div class="row">
+                    <div class="col s12 ">
+                         <h3 class="deco">Popular Palces</h3>
+                    </div>
+            </div>
+       </div>
+   </section>
+
+   <!---section-popular palaces images-->
+    <section id="popular" class="section section-popular scrollspy">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card panel amber">
+                        <div class="card-image ">
+                            <img src="img/1.jpg" alt="">
+                            <span class="card-title"> <h3>Bathalegala</h3> </span>
+                        </div>
+                        <div class="card-content">
+                            this is the lowest package that we 
+                            took for riding.so keep that on mind
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                        <div class="card panel amber">
+                            <div class="card-image ">
+                                <img src="img/2.jpg" alt="">
+                                <span class="card-title"> <h4>Nuwara Eliya</h4> </span>
+                            </div>
+                            <div class="card-content">
+                                this is the lowest package that we 
+                                took for riding.so keep that on mind so please 
+                                with it 
+                            </div>
+                        </div>
+                </div>
+
+                <div class="col s12 m4">
+                        <div class="card panel amber">
+                            <div class="card-image ">
+                                <img src="img/3.jpg" alt="">
+                                <span class="card-title"> <h4>National Zoo</h4> </span>
+                            </div>
+                            <div class="card-content">
+                                this is the lowest package that we 
+                                
+                            </div>
+                        </div>
+                </div>       
+            </div>
+        </div>
+    </section>
+
+    <!--section follow-->
+   
+    
+    
+    
+     <!--JavaScript at end of body for optimized loading-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <script>
+
+         //side nave decleration for mobiles
+         const sideNav=document.querySelector('.sidenav');
+         
+         //console.log(sideNav) 
+         //it returns the  71 to 93 code 
+
+         //in their 'sidenav' is the class name
+         //'sideNav' is the constant variable
+        M.Sidenav.init(sideNav,{});
+        //"M" is for materialize and init for initialize 
+        // {} for option (object ) keep it rest
+
+
+     </script>
+     <!--for the slider javascript-->
+
+     <script>
+         const slider=document.querySelector('.slider');
+         M.Slider.init(slider,{
+            indicators:false,
+            height:800,
+            transition:1000,
+            interval:6000
+         })
+     
+     </script>
+
+     <!--for autocomplete in the searchbar-->
+     <script>
+         const ac=document.querySelector('.autocomplete');
+         console.log(ac);
+         M.Autocomplete.init(ac,{
+             data:{
+                 //key value pair
+                 "Nuwara Eliya":null,
+                 "Bathalegala":null,
+                 "Zoo park":null,
+                 "Hanthana":null,
+                 "Madu ganga":null,
+                 "Galle":null,
+                 "Colombo":null,
+
+             }
+         })
+     
+     </script>
+
+</body>
+</html>
